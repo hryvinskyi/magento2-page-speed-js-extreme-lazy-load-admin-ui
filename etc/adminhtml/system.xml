@@ -66,12 +66,19 @@ src="https://somedomain.com/dist.js"&gt;&lt;/script&gt;*</pre>]]></comment>
                             <field id="enabled">1</field>
                         </depends>
                     </field>
-                    <field id="is_apply_for_page_types" translate="label comment" type="select" sortOrder="80"
+                    <field id="exclude_by_uri" translate="label" type="textarea" sortOrder="80"
+                           showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                        <label>Exclude lazy loading script by page url.</label>
+                        <depends>
+                            <field id="enabled">1</field>
+                        </depends>
+                    </field>
+                    <field id="is_apply_for_page_types" translate="label comment" type="select" sortOrder="90"
                            showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                         <label>Enable only for specific page types</label>
                         <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     </field>
-                    <field id="apply_for_page_types" translate="label comment" type="textarea" sortOrder="90"
+                    <field id="apply_for_page_types" translate="label comment" type="textarea" sortOrder="100"
                            showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                         <label>Enable for this specific page types</label>
                         <comment>Specify new line separated page types. Like: cms_page_view cms_index_index catalog_product_view</comment>
@@ -80,12 +87,12 @@ src="https://somedomain.com/dist.js"&gt;&lt;/script&gt;*</pre>]]></comment>
                             <field id="is_apply_for_page_types">1</field>
                         </depends>
                     </field>
-                    <field id="is_disable_for_page_types" translate="label comment" type="select" sortOrder="100"
+                    <field id="is_disable_for_page_types" translate="label comment" type="select" sortOrder="110"
                            showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                         <label>Disable for specific page types</label>
                         <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     </field>
-                    <field id="disable_for_page_types" translate="label comment" type="textarea" sortOrder="110"
+                    <field id="disable_for_page_types" translate="label comment" type="textarea" sortOrder="120"
                            showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                         <label>Disable for this specific page types</label>
                         <comment>Specify new line separated page types. Like: checkout_cart_index checkout_index_index</comment>
