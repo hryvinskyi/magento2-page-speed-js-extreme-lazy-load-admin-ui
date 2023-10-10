@@ -30,6 +30,10 @@ class DelayScriptEvents implements OptionSourceInterface
                 'label' => __('Touch event'),
                 'value' => 'touchstart'
             ],
+            [
+                'label' => __('Extreme lazy load event'),
+                'value' => 'ExtremeLazyLoad'
+            ],
         ];
     }
 }
